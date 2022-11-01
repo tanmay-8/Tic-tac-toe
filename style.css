@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container */
+.main-cont{
+    display: flex;
+    padding: 5% 0 0 0;
+    box-sizing: border-box;
+    justify-content: center;
+    background: #000;
+    min-height: 100vh;
+}
+
+.before-st{
+    text-align: center;
+}
+h1{
+    margin-top: 20%;
+    color: white;
+    font-family: 'Lobster', cursive;
+    word-spacing: 5px;
+    font-size:3rem;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.st-bt{
+    cursor: pointer;
+    background-color: rgb(6, 146, 64);
+    font-size: 1.5rem;
+    color: rgb(250, 239, 210);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px gray;
+}
+
+/* Player whose turn is */
+.players{
+    color: white;
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.player-names{
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px gray;
+    text-align: center;
+    width: 210px;
+    padding: 10px;
+    font-size: 30px;
+    transition:all 1s;
+}
+
+/* player 1 and 2 */
+#player-1{
+    background-color: red;
+}
+#player-2{
+    background-color: green;
+}
+
+/* to hide element */
+.hide-p{
+    display: none;
+}
+
+
+/* Tic tac toe board */
+.grid-cont{
+    padding: 20px;
+}
+/* Each box */
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    padding: 4px;
+    height: 70px;
+    width: 70px;
+    font-size: 50px;
+}
+
+.box:hover{
+    background-color: rgb(80, 78, 78,0.5);
+}
+/* each column */
+.col{
+    color: white;
+    display: flex;
+    width: fit-content;
+}
+
+/* first 2 columns */
+.f-2{
+    border-bottom: 2px solid white;
+}
+
+/* right and left boxes */
+.left-box{
+    border-right: 2px solid white;
+}
+.right-box{
+    border-left: 2px solid white;
+}
+
+/* After complete */
+.after-complete{
+    text-align: center;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+    <div class="main-cont">
+      <div class="before-st" id="before-st">
+        <h1>Tic tac toe</h1>
+        <button class="st-bt" id="st-bt">Start</button>
+      </div>  
+      <div class="after-st hide-p" id="after-st">
+        <div class="players">
+            <div class="player-names" id="player-1">Player 1 turn</div>
+            <div class="player-names hide-p" id="player-2">Player 2 turn</div>
+        </div>
+        <div class="grid-cont">
+          <div class="col f-2">
+            <div class="box left-box"></div>
+            <div class="box"></div>
+            <div class="box right-box"></div>
+          </div>
+          <div class="col f-2">
+            <div class="box left-box"></div>
+            <div class="box"></div>
+            <div class="box right-box"></div>
+          </div>
+          <div class="col ">
+            <div class="box left-box"></div>
+            <div class="box"></div>
+            <div class="box right-box"></div>
+          </div>
+        </div>
+      </div>
+      <div class="after-complete hide-p" id="after-complete">
+        <h1 id="who-win"></h1>
+        <button class="st-bt" id="restart">Restart</button>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
